@@ -1,0 +1,20 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Alchohol</th>
+        <th scope="col">Ingridients</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let cocktail of cocktails">
+        <td>{{ cocktail.cocktailName }}</td>
+        <td>{{ cocktail.alchohol }}</td>
+        <td><div *ngFor="let ingridient of cocktail.ingridientsNames">{{ ingridient.name }}</div></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
