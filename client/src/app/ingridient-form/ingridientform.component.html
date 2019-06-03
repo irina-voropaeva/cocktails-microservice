@@ -9,8 +9,8 @@
         </div>
         <div class="form-group">
           <label for="name">Alchohol existance</label>
-            <label><input type="radio" name="alchoholic" value="true" (onClick)="this.ingridient.alchohol = true"> Yes </label>
-            <label><input type="radio" name="alchoholic" value="false" (onClick)="this.ingridient.alchohol = false"> No </label>
+            <div><label><input type="radio" name="alchoholic" value="true" (onClick)="this.ingridient.alchohol = true"> Yes </label></div>
+            <div><label><input type="radio" name="alchoholic" value="false" (onClick)="this.ingridient.alchohol = false"> No </label></div>
         </div>
         <div [hidden]="!name.pristine" class="alert alert-danger">Name is required</div>
         <button type="submit" [disabled]="!ingridientForm.form.valid" class="btn btn-info">Submit</button>
